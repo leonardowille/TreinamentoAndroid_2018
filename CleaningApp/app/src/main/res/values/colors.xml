@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#48B3E2</color>
+    <color name="colorPrimaryDark">#48B3E2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="button_label_color">#5B6F81</color>
+    <color name="end_final_step">#DDD</color>
+    <color name="hint_color">#C9C9C9</color>
+    <!--#FAFAFA-->
+</resources>

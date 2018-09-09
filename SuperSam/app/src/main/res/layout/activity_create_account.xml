@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/background_login"
+    tools:context="br.com.wille.supersam.CreateAccountActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/create_account_title"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/background_input_login"
+            android:hint="@string/first_name"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp"
+            android:weightSum="15">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="55dp"
+                android:background="@drawable/background_input_login"
+                android:hint="@string/age"
+                android:paddingEnd="25dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="25dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:layout_gravity="start"
+                android:textSize="16sp"
+                android:inputType="number"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="55dp"
+                android:layout_gravity="end"
+                android:background="@drawable/background_input_login"
+                android:hint="@string/country"
+                android:inputType="text"
+                android:paddingEnd="25dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="25dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/background_input_login"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_hint"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/background_input_login"
+            android:inputType="textEmailAddress"
+            android:hint="@string/password_hint"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="14dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/create_an_account"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="14dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSignInId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@android:color/transparent"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:text="@string/need_help"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

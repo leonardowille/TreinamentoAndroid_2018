@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CleaningApp</string>
+    <string name="step_1">STEP 1</string>
+    <string name="choosen_what_to_clean">Choosen what to clean</string>
+    <string name="aed_per_item">+25 AED PER ITEM</string>
+    <string name="next_step">Next Step</string>
+    <string name="order">Order</string>
+    <string name="step_2">STEP 2</string>
+    <string name="go_to_order">Go to Order</string>
+    <string name="windows">Windows</string>
+    <string name="fridge">Fridge</string>
+    <string name="ironing">Ironing</string>
+    <string name="oven">Oven</string>
+    <string name="final_step">Final Step</string>
+    <string name="step_3">Step 3</string>
+    <string name="when">When</string>
+    <string name="date">Date</string>
+    <string name="total">Total:</string>
+    <string name="price_order">75 AED</string>
+    <string name="choose_time">Choose Time</string>
+    <string name="when_to_clean">When to Clean</string>
+    <string name="get_my_location">Get my location</string>
+    <string name="full_name">Full name</string>
+    <string name="city">City</string>
+    <string name="dubai">Dubai</string>
+</resources>

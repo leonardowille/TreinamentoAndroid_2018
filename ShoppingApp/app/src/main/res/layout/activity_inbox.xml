@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InboxActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideEnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/guideTop" />
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_more_horiz"
+        android:contentDescription="More"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="@id/guideTop" />
+
+    <TextView
+        android:id="@+id/inboxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/inbox"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <ImageView
+        android:id="@+id/iconContact1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flight"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/inboxContact1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/online"
+        app:layout_constraintEnd_toEndOf="@id/iconContact1"
+        app:layout_constraintTop_toTopOf="@id/iconContact1"/>
+
+    <TextView
+        android:id="@+id/inboxContact1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Ari Lennox"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toEndOf="@id/iconContact1"
+        app:layout_constraintTop_toBottomOf="@id/inboxTitle" />
+
+    <TextView
+        android:id="@+id/timeInbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="10 min"
+        android:textSize="10sp"
+        android:textColor="@color/date_notification"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintBaseline_toBaselineOf="@id/inboxContact1" />
+
+    <TextView
+        android:id="@+id/textInbox1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Hey Jane! Thanks for reaching out. The apartment is available…"
+        android:textColor="@color/date_notification"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/inboxContact1"
+        app:layout_constraintTop_toBottomOf="@id/inboxContact1" />
+
+    <ImageView
+        android:id="@+id/iconContact2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flight"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/inboxContact2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/online"
+        app:layout_constraintEnd_toEndOf="@id/iconContact2"
+        app:layout_constraintTop_toTopOf="@id/iconContact2"/>
+
+    <TextView
+        android:id="@+id/inboxContact2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Joey Cole"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toEndOf="@id/iconContact2"
+        app:layout_constraintTop_toBottomOf="@id/textInbox1" />
+
+    <TextView
+        android:id="@+id/timeInbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="10 min"
+        android:textSize="10sp"
+        android:textColor="@color/date_notification"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintBaseline_toBaselineOf="@id/inboxContact2" />
+
+    <TextView
+        android:id="@+id/textInbox2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Hi! We can meet at 11am. Are you free for that meeting this week?"
+        android:textColor="@color/date_notification"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/inboxContact2"
+        app:layout_constraintTop_toBottomOf="@id/inboxContact2" />
+
+    
+
+</android.support.constraint.ConstraintLayout>

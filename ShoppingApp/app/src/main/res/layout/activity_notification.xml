@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideEnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/guideTop" />
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_more_horiz"
+        android:contentDescription="More"
+        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        app:layout_constraintTop_toTopOf="@id/guideTop" />
+
+    <TextView
+        android:id="@+id/notificationsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/notifications"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <ImageView
+        android:id="@+id/iconNotification1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flight"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/notificationText1"/>
+
+    <TextView
+        android:id="@+id/notificationText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:text="Reminder: You better be ready! Your flight is tomorrow at 9am"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/notificationsTitle"
+        app:layout_constraintStart_toEndOf="@id/iconNotification1"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"/>
+
+    <TextView
+        android:id="@+id/dateNotification1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1h57min ago"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/date_notification"
+        app:layout_constraintTop_toBottomOf="@id/notificationText1"
+        app:layout_constraintStart_toStartOf="@id/notificationText1"/>
+
+    <ImageView
+        android:id="@+id/iconNotification2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/offer"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/notificationText2"/>
+
+    <TextView
+        android:id="@+id/notificationText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:text="Offer: Off-Season in Formentera is really what you need! Have a look"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/dateNotification1"
+        app:layout_constraintStart_toEndOf="@id/iconNotification2"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"/>
+
+    <TextView
+        android:id="@+id/dateNotification2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yesterday, 5:47pm"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/date_notification"
+        app:layout_constraintTop_toBottomOf="@id/notificationText2"
+        app:layout_constraintStart_toStartOf="@id/notificationText2"/>
+
+    <ImageView
+        android:id="@+id/iconNotification3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transfer"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/notificationText3"/>
+
+    <TextView
+        android:id="@+id/notificationText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:text="Reminder: Your transfer from the loft to the airport is ready to pick you up on 3/9/18 at 5pm"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/dateNotification2"
+        app:layout_constraintStart_toEndOf="@id/iconNotification3"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"/>
+
+    <TextView
+        android:id="@+id/dateNotification3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday, 7:02pm"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/date_notification"
+        app:layout_constraintTop_toBottomOf="@id/notificationText3"
+        app:layout_constraintStart_toStartOf="@id/notificationText3"/>
+
+    <ImageView
+        android:id="@+id/iconNotification4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/food"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/notificationText4"/>
+
+    <TextView
+        android:id="@+id/notificationText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:text="Reminder: Your transfer from the loft to the airport is ready to pick you up on 3/9/18 at 5pm"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/dateNotification3"
+        app:layout_constraintStart_toEndOf="@id/iconNotification4"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"/>
+
+    <TextView
+        android:id="@+id/dateNotification4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday, 7:02pm"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/date_notification"
+        app:layout_constraintTop_toBottomOf="@id/notificationText4"
+        app:layout_constraintStart_toStartOf="@id/notificationText4"/>
+
+</android.support.constraint.ConstraintLayout>

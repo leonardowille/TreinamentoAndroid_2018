@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shopping App</string>
+    <string name="the_art_museum">The art museum</string>
+    <string name="shop_title">Shop</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="product_name">Braun Classic Watch</string>
+    <string name="product_description">This Braun watch is a reissue of the original 1970\'s design from renowned design team Dietrich Lubs and Dieter Rams, both of whom have work featured in the Museum’s collection. The large watch features a numbered face, and the smaller watch has only index lines. Made of a matte stainless-steel case, black dial, mineral glass, a three-hand quartz movement, and a leather band. Water-resistant.</string>
+    <string name="product_price">$160.00</string>
+    <string name="product_member_price">$140.00 Member Price</string>
+    <string name="contentDecription">Imagem demonstrativa</string>
+    <string name="notifications">Notifications</string>
+    <string name="inbox">Inbox</string>
+</resources>
