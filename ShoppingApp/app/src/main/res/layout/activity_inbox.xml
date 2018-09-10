@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/online"
         app:layout_constraintEnd_toEndOf="@id/iconContact1"
-        app:layout_constraintTop_toTopOf="@id/iconContact1"/>
+        app:layout_constraintTop_toTopOf="@id/iconContact1" />
 
     <TextView
         android:id="@+id/inboxContact1"
@@ -89,10 +89,10 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:text="10 min"
-        android:textSize="10sp"
         android:textColor="@color/date_notification"
-        app:layout_constraintEnd_toEndOf="@id/guideEnd"
-        app:layout_constraintBaseline_toBaselineOf="@id/inboxContact1" />
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/inboxContact1"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd" />
 
     <TextView
         android:id="@+id/textInbox1"
@@ -119,7 +119,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/online"
         app:layout_constraintEnd_toEndOf="@id/iconContact2"
-        app:layout_constraintTop_toTopOf="@id/iconContact2"/>
+        app:layout_constraintTop_toTopOf="@id/iconContact2" />
 
     <TextView
         android:id="@+id/inboxContact2"
@@ -140,10 +140,10 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:text="10 min"
-        android:textSize="10sp"
         android:textColor="@color/date_notification"
-        app:layout_constraintEnd_toEndOf="@id/guideEnd"
-        app:layout_constraintBaseline_toBaselineOf="@id/inboxContact2" />
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/inboxContact2"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd" />
 
     <TextView
         android:id="@+id/textInbox2"
@@ -157,6 +157,62 @@
         app:layout_constraintStart_toStartOf="@id/inboxContact2"
         app:layout_constraintTop_toBottomOf="@id/inboxContact2" />
 
-    
+    <View
+        android:id="@+id/lineSeparator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/line"
+        app:layout_constraintTop_toBottomOf="@id/textInbox2" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/titleArchivedMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Archived messages"
+        android:textColor="@color/archived_title"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toBottomOf="@id/lineSeparator" />
+
+    <ImageView
+        android:id="@+id/iconArchived1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flight"
+        app:layout_constraintStart_toStartOf="@id/guideStart"
+        app:layout_constraintTop_toTopOf="@id/inboxArchived1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/offline"
+        app:layout_constraintEnd_toEndOf="@id/iconArchived1"
+        app:layout_constraintTop_toTopOf="@id/iconArchived1" />
+
+    <TextView
+        android:id="@+id/inboxArchived1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="John Wick"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toEndOf="@id/iconArchived1"
+        app:layout_constraintTop_toBottomOf="@id/titleArchivedMessages" />
+
+    <TextView
+        android:id="@+id/textArchived1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Yes I know, sometimes it can be tricky! Hope you have a nice day"
+        android:textColor="@color/date_notification"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="@id/inboxArchived1"
+        app:layout_constraintTop_toBottomOf="@id/inboxArchived1" />
 
 </android.support.constraint.ConstraintLayout>

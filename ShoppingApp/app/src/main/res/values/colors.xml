@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="button_color">#FF473A</color>
     <color name="date_notification">#B4C2D3</color>
+    <color name="line">#B4C2D3</color>
+    <color name="archived_title">#EE5C3B</color>
 </resources>
