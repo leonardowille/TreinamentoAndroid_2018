@@ -1,7 +1,8 @@
 package br.com.wille.cwiflix
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import br.com.wille.cwiflix.adapters.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,10 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fragmentPageAdapter = MainPagerAdapter(supportFragmentManager)
-        mainViewAdapter.adapter = fragmentPageAdapter
+        val fragmentPagerAdapter = MainPagerAdapter(supportFragmentManager, this)
+        mainViewPager.adapter = fragmentPagerAdapter
 
-        tabLayoutView.setupWithViewPager(mainViewAdapter)
-
+        tabLayout.setupWithViewPager(mainViewPager)
     }
 }

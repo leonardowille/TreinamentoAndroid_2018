@@ -1,6 +1,7 @@
 package br.com.wille.projetoexemplo
 
 import android.os.Bundle
+import android.support.design.widget.BottomNavigationView
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
@@ -10,7 +11,7 @@ import br.com.wille.projetoexemplo.fragments.MovieFragment
 import br.com.wille.projetoexemplo.fragments.SeriesFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
 
         navigationView.setNavigationItemSelectedListener(this)
+        bottomNavigationView.setOnNavigationItemSelectedListener(this)
         openFragment(MovieFragment())
     }
 
