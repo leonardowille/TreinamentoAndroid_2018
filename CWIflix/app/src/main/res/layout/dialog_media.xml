@@ -2,82 +2,63 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideStart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="12dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideEnd"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="12dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideTop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="12dp" />
+    android:layout_height="wrap_content"
+    android:padding="12dp">
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:maxLines="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="The Predator"
         android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@id/guideStart"
-        app:layout_constraintTop_toBottomOf="@+id/guideTop" />
+        android:textSize="18sp"
+        app:fontFamily="@font/open_sans"
+        app:layout_constraintEnd_toStartOf="@id/gradeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/gradeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5.4/10"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/titleTextView"
-        app:layout_constraintEnd_toStartOf="@id/guideEnd"
-        app:layout_constraintTop_toBottomOf="@+id/guideTop" />
+        android:text="5.3/10"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/open_sans"
+        app:layout_constraintBaseline_toBaselineOf="@id/titleTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/releaseDateTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="13/09/2018"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@id/guideStart"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
-        app:layout_constraintEnd_toEndOf="@id/guideEnd"/>
+        app:fontFamily="@font/open_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
     <TextView
         android:id="@+id/overviewTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground "
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/guideEnd"
-        app:layout_constraintStart_toStartOf="@id/guideStart"
-        app:layout_constraintTop_toBottomOf="@+id/releaseDateTextView" />
+        android:layout_marginTop="16dp"
+        android:text="A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy."
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/open_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/releaseDateTextView" />
 
     <RatingBar
         android:layout_marginTop="10dp"
         android:id="@+id/ratingBar"
         android:stepSize="0.5"
         android:numStars="5"
-        app:layout_constraintStart_toEndOf="@id/guideStart"
-        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/overviewTextView"
@@ -90,8 +71,8 @@
         android:text="7/10"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/guideStart"
-        app:layout_constraintEnd_toStartOf="@id/guideEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
